@@ -270,7 +270,7 @@ sub ReadLBDData {
     my %cui_terms;
     open my $fh, '<', "$lbd_file" or die "Can't open $lbd_file: $!";
     while (my $line = <$fh>) {
-	if ($line =~ /(\d+)\t(\d+.\d+)\t(C\d{7})\t(.+)/){
+	if ($line =~ /(\d+)\t(\d+.?\d*)\t(C\d{7})\t(.+)/){
 	    my $index = $1 - 1;
 	    my $score = $2;
 	    my $cui = $3;
