@@ -1,9 +1,6 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-
-use strict;
-use warnings;
 use Cwd;
 
 # usage: perl DiscoveryReplication.pl [vcluster_dir] [lbd_file] [vector_file] [cl_method] [target_cui]
